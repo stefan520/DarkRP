@@ -1,7 +1,5 @@
 {
-
-  "__guid": "e12fc378-b298-4bad-8590-631919a39bfd",
-  
+  "__guid": "e3c7aba6-ab93-4e2b-b849-062550483433",
   "GameObjects": [
     {
       "__guid": "3ee1c9f4-07be-4e0b-8b23-67bee2d8ec8a",
@@ -89,16 +87,16 @@
       "NetworkOrphaned": 1,
       "Components": [
         {
-          "__type": "GameSystems.Config.ConfigManager",
-          "__guid": "5611e3a0-392e-4394-9f06-7a9e8195f060",
+          "__type": "GameSystems.GameController",
+          "__guid": "b1a2a595-dab4-4505-b927-07b149373d20"
+        },
+        {
+          "__type": "Sandbox.GameSystems.Config.ConfigManager",
+          "__guid": "4e32f08e-980f-4ba0-8be8-698dc0224e25",
           "MoneyPrefab": {
             "_type": "gameobject",
             "prefab": "prefab/money.prefab"
           }
-        },
-        {
-          "__type": "GameSystems.GameController",
-          "__guid": "b1a2a595-dab4-4505-b927-07b149373d20"
         }
       ]
     },
@@ -177,82 +175,11 @@
       ]
     },
     {
-      "__guid": "ea663a78-1aeb-4b8d-9703-3331d56dad3b",
-      "Flags": 0,
-      "Name": "Terrain",
-      "Position": "-19311.73,-20195,-1670.427",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "Sandbox.Terrain",
-          "__guid": "f1cec5d8-e793-4c4c-85a2-90b6fcd239b8",
-          "__version": 1,
-          "ClipMapLodExtentTexels": 256,
-          "ClipMapLodLevels": 6,
-          "DebugView": "None",
-          "EnableCollision": true,
-          "IsTrigger": false,
-          "RenderType": "Off",
-          "Static": true,
-          "Storage": "map/landscape/landscape.terrain",
-          "TerrainHeight": 10000,
-          "TerrainSize": 39936
-        }
-      ]
-    },
-    {
-      "__guid": "b1363f39-b9e5-4401-9df9-f33607e21b71",
-      "Flags": 0,
-      "Name": "Map Instance",
-      "Position": "2653.494,-933.2069,-608.377",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "Sandbox.MapInstance",
-          "__guid": "abfa78b9-4827-4e87-821e-abf6307fffe3",
-          "__version": 1,
-          "EnableCollision": true,
-          "MapName": "map/downtownv2/rp_downtown_v2.vmap",
-          "NoOrigin": false,
-          "UseMapFromLaunch": false
-        }
-      ],
-      "Children": []
-    },
-    {
-      "__guid": "25b3bef3-0fda-43dc-9fef-773bc446096c",
-      "Flags": 0,
-      "Name": "Cube",
-      "Position": "-746.6807,-1344.285,187.7818",
-      "Rotation": "0,0,-0.7071069,0.7071066",
-      "Scale": "1,1,0.722172",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "Sandbox.ModelRenderer",
-          "__guid": "473b76b5-65c1-42e2-802a-908e8f82b6f9",
-          "BodyGroups": 18446744073709551615,
-          "MaterialOverride": "materials/tile/tilefloor_001a.vmat",
-          "Model": "models/dev/box.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
-        },
-        {
-          "__type": "Sandbox.BoxCollider",
-          "__guid": "6cd7b75e-c224-441c-8d15-0dc070879748",
-          "Center": "0,0,0",
-          "IsTrigger": false,
-          "Scale": "50,50,50",
-          "Static": false
-        }
-      ]
-    },
-    {
       "__guid": "396535a2-c872-4aa0-a88a-832bab9fe46c",
       "Flags": 0,
       "Name": "printer",
-      "Position": "-739.5702,-1221.134,172.4028",
-      "Rotation": "0,0,-0.7071069,0.7071066",
+      "Position": "-758.0124,-1161.398,186.4841",
+      "Rotation": "0,0,-0.9238796,0.3826833",
       "Tags": "printer,interact,grab",
       "Enabled": true,
       "NetworkMode": 1,
@@ -264,7 +191,7 @@
       "__guid": "faaa4319-1cc1-474e-a21b-e7bab0437191",
       "Flags": 0,
       "Name": "prop",
-      "Position": "-755.4434,-1337.741,208.3003",
+      "Position": "-698.1496,-1130.125,180.8667",
       "Rotation": "0,0,-0.7071069,0.7071066",
       "Tags": "prop,interact,grab",
       "Enabled": true,
@@ -277,7 +204,7 @@
       "__guid": "bb58b9c8-18d5-4219-a01c-6a5464790caf",
       "Flags": 0,
       "Name": "prop (1)",
-      "Position": "-756.4456,-1327.34,208.3003",
+      "Position": "-699.1518,-1119.724,180.8667",
       "Rotation": "0,0,-0.7071069,0.7071066",
       "Tags": "prop,interact,grab",
       "Enabled": true,
@@ -290,7 +217,7 @@
       "__guid": "83e07f29-9a65-449d-aae6-b7bb0562f39b",
       "Flags": 0,
       "Name": "prop (2)",
-      "Position": "-766.2938,-1331.54,208.3003",
+      "Position": "-709,-1123.924,180.8667",
       "Rotation": "0,0,-0.7071069,0.7071066",
       "Tags": "prop,interact,grab",
       "Enabled": true,
@@ -303,7 +230,18 @@
       "__guid": "3d867b9c-2651-4dae-a5d4-d3952674f32a",
       "Flags": 0,
       "Name": "money",
-      "Position": "-751.1619,-1353.84,205.9034",
+      "Position": "-790.0078,-1235.786,182.8195",
+      "Rotation": "0,0,-0.7071069,0.7071066",
+      "Tags": "money,interactable,interact,grab",
+      "Enabled": true,
+      "__Prefab": "prefab/money.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "67c8bb67-2370-4f32-a1f7-ba2e564fca68",
+      "Flags": 0,
+      "Name": "money (2)",
+      "Position": "-790.0075,-1244.086,182.8195",
       "Rotation": "0,0,-0.7071069,0.7071066",
       "Tags": "money,interactable,interact,grab",
       "Enabled": true,
@@ -314,7 +252,7 @@
       "__guid": "f359e953-56c4-490a-96f4-ab9f3a000025",
       "Flags": 0,
       "Name": "money (1)",
-      "Position": "-751.1619,-1350.164,205.9034",
+      "Position": "-790.0078,-1226.356,182.8195",
       "Rotation": "0,0,-0.7071069,0.7071066",
       "Tags": "money,interactable,interact,grab",
       "Enabled": true,
@@ -325,7 +263,7 @@
       "__guid": "e161b418-ea3e-4613-bb43-020edcd6c975",
       "Flags": 0,
       "Name": "door (1)",
-      "Position": "-733.3755,-1706.861,169.4836",
+      "Position": "-733.3755,-1706.861,175.6885",
       "Tags": "interact",
       "Enabled": true,
       "NetworkMode": 1,
@@ -337,7 +275,7 @@
       "__guid": "ed25c923-66e2-44b0-a287-91ed582dbc3a",
       "Flags": 0,
       "Name": "temp_door_001a_frame (1)",
-      "Position": "-733.3744,-1706.809,168.4838",
+      "Position": "-733.3744,-1706.809,174.6887",
       "Enabled": true,
       "Components": [
         {
@@ -355,7 +293,7 @@
       "__guid": "3979c2ce-8821-4ac8-a1ce-e0dd4f9839ec",
       "Flags": 0,
       "Name": "door (2)",
-      "Position": "-733.3757,-1598.793,169.4836",
+      "Position": "-733.3757,-1598.793,175.6885",
       "Tags": "interact",
       "Enabled": true,
       "NetworkMode": 1,
@@ -367,7 +305,7 @@
       "__guid": "048935d2-71c8-49ae-8c0d-551e35ae54eb",
       "Flags": 0,
       "Name": "temp_door_001a_frame (2)",
-      "Position": "-733.3747,-1598.742,168.4838",
+      "Position": "-733.3747,-1598.742,174.6887",
       "Enabled": true,
       "Components": [
         {
@@ -385,7 +323,7 @@
       "__guid": "8fbc26de-68d3-465e-91d4-31c22c6282e9",
       "Flags": 0,
       "Name": "door (3)",
-      "Position": "-61.8578,-2482.226,168.2727",
+      "Position": "-61.85779,-2482.226,175.4935",
       "Rotation": "0,0,0.7071067,0.7071068",
       "Scale": "1,1.38,1.36",
       "Tags": "interact",
@@ -399,7 +337,7 @@
       "__guid": "53435d86-4d43-4fbd-9edf-661f12f2bd64",
       "Flags": 0,
       "Name": "door (4)",
-      "Position": "552,-1705.465,168.2727",
+      "Position": "552,-1705.465,175.6112",
       "Scale": "1,1.38,1.36",
       "Tags": "interact",
       "Enabled": true,
@@ -412,7 +350,7 @@
       "__guid": "dcfc110e-dbfe-4fcf-be11-da652754cadd",
       "Flags": 0,
       "Name": "door (5)",
-      "Position": "720.4877,-1658.169,168.2727",
+      "Position": "720.4877,-1658.169,175.4599",
       "Scale": "1,1.38,1.36",
       "Tags": "interact",
       "Enabled": true,
@@ -422,52 +360,43 @@
       "__PrefabVariables": {}
     },
     {
-      "__guid": "9f43e73d-f763-45c6-877a-680b296fb3d4",
+      "__guid": "de0edb13-9840-4496-b871-472672086cae",
       "Flags": 0,
-      "Name": "GameObject",
-      "Enabled": true
-    },
-    {
-      "__guid": "c74fbfea-c25a-425c-b9c4-52d0cb0b54d9",
-      "Flags": 0,
-      "Name": "TEMP SPAWN TEXT",
-      "Position": "-957.0762,-2772.121,219.8589",
-      "Rotation": "0,0,0.02617695,0.9996573",
+      "Name": "Sun",
+      "Position": "-283.2347,-2499.59,957.3608",
+      "Rotation": "0,0.6087614,0,0.7933534",
+      "Tags": "light_directional,light",
       "Enabled": true,
       "Components": [
         {
-          "__type": "Sandbox.TextRenderer",
-          "__guid": "d122169b-6381-4bca-a513-a077c22f0487",
-          "Color": "0.45103,0.47149,0.5297,1",
-          "FontFamily": "Poppins",
-          "FontSize": 64,
-          "FontWeight": 800,
-          "Scale": 0.3,
-          "Text": "Turn Around \uD83E\uDD26\n(fix this)",
-          "TextAlignment": "Center"
+          "__type": "Sandbox.DirectionalLight",
+          "__guid": "c6f3226c-1c09-4b95-9cd4-db0a0d4ebb1c",
+          "FogMode": "Enabled",
+          "FogStrength": 1,
+          "LightColor": "0.91373,0.98039,1,1",
+          "Shadows": true,
+          "SkyColor": "0,0,0,0"
         }
       ]
     },
     {
-      "__guid": "aaed1c6a-c875-482b-b24f-ef574ecf6df8",
+      "__guid": "b1363f39-b9e5-4401-9df9-f33607e21b71",
       "Flags": 0,
-      "Name": "TEMP SPAWN TEXT",
-      "Position": "-957.0762,200.3775,219.8589",
-      "Rotation": "0,0,0.02617695,0.9996573",
+      "Name": "Map Instance",
+      "Position": "2653.947,-933.2069,-601.2447",
       "Enabled": true,
       "Components": [
         {
-          "__type": "Sandbox.TextRenderer",
-          "__guid": "d958a8ee-e09f-47d0-9b9b-f3ededcd8f78",
-          "Color": "0.45103,0.47149,0.5297,1",
-          "FontFamily": "Poppins",
-          "FontSize": 64,
-          "FontWeight": 800,
-          "Scale": 0.3,
-          "Text": "Turn Around\uD83E\uDD26\n(fix this)",
-          "TextAlignment": "Center"
+          "__type": "Sandbox.MapInstance",
+          "__guid": "abfa78b9-4827-4e87-821e-abf6307fffe3",
+          "__version": 1,
+          "EnableCollision": true,
+          "MapName": "map/downtownv2/rp_downtown_v2.vmap",
+          "NoOrigin": false,
+          "UseMapFromLaunch": false
         }
-      ]
+      ],
+      "Children": []
     }
   ],
   "SceneProperties": {
